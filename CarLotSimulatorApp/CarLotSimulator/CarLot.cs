@@ -5,8 +5,17 @@ namespace CarLotSimulator;
 
 public class CarLot
 {
-    public List<Car> ParkingLot { get; set; } = new List<Car>();
+    public CarLot()
+    {
+        CarLot.NumberOfCars++; 
+    }
 
+    public static int NumberOfCars = 1;
+    public List<Car> Cars = new List<Car>(); 
+
+    
+    public List<Car> ParkingLot { get; set; } = new List<Car>();
+    
     public  void CheckCars()
     {
         foreach (var car in ParkingLot)
@@ -15,7 +24,8 @@ public class CarLot
         }
         
     }
-
+    
+    
     
 }
 

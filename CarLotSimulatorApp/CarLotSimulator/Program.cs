@@ -1,4 +1,6 @@
-﻿namespace CarLotSimulator
+﻿using System;
+
+namespace CarLotSimulator
 {
     class Program 
     {
@@ -36,10 +38,10 @@
             
             carThree.MakeEngineNoise(carThree.EngineNoise);
             carThree.MakeHonkNoise(carThree.HonkNoise);
-            
             carLotOne.ParkingLot.Add(carThree);
             
             carLotOne.CheckCars();
+            Console.WriteLine($"Number of cars created: {CarLot.NumberOfCars}");
             
             
             

@@ -17,6 +17,8 @@ namespace CarLotSimulator
         public string EngineNoise { get; set; } 
         public string HonkNoise { get; set; }
         public bool IsDriveable { get; set; }
+
+        
         
         public  void MakeEngineNoise(string EngineNoise)
         {
@@ -41,6 +43,8 @@ namespace CarLotSimulator
             Model = model;
             Year = year;
             IsDriveable = isDriveable; 
+            
+            CarLot.NumberOfCars++;
         }
         
         
